@@ -1,7 +1,8 @@
 stl_cmd
 =======
 
-The goal of each stl_cmd is to provide a simple command line interface for manipulating binary STL files. stl_cmd aims to be easy to set up, and is geared towards teaching basic terminal usage and programming skills in the 3D printing space.
+The goal of each stl_cmd is to provide a simple command line interface for manipulating binary STL files. stl_cmd aims to be easy to set up, and is geared towards teaching basic terminal usage and programming skills in the 3D printing space.   
+If you have ASCII stl, you can use this repo: https://github.com/Carlopasquinucci/stlconvert
 
 Getting started
 ---------------
@@ -158,7 +159,13 @@ Outputs the number of border edges in the STL files. This should be 0 for manifo
 
     stl_spreadsheet <input file>
 
-Outputs normal and position data for every triangle (normal, point1, point2 and point3 specified per row) in a tab delimited format that can be opened as a spreadsheet.
+Outputs normal and position data for every triangle (normal, point1, point2 and point3 specified per row) in a tab delimited format that can be opened as a spreadsheet.   
+
+### stl_volume  
+
+    stl_cone [file.stl]   
+    
+Calculate the volume of STL files (could used for price or print time approximations)      
 
 ## Modifiers
 
@@ -206,10 +213,6 @@ Compute the convex hull of the input STL files.
 ### stl_area
 
 Calculate the surface area of STL files (could be used for price or print time approximations)
-
-### stl_volume
-
-Calculate the volume of STL files (could used for price or print time approximations)
 
 ### stl_layout
 
